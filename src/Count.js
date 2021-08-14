@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 const Count = (props) => {
   const [count, setCount] = useState(0);
@@ -11,10 +12,10 @@ const Count = (props) => {
     }
   };
   return (
-    <div>
+    <div className="menu">
       <h3>{props.order}</h3>
       <p>${props.price}</p>
-      <div>
+      <div className="counter">
         <button onClick={add}>+</button>
         <p>{count}</p>
         <button onClick={minus}>-</button>
