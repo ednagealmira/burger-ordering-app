@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Count from "./Count.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Count order="Burger Deluxe" price="7.39" />
+      <Count order="Supreme Cheeseburger" price="8.19" />
+      <Count order="Turkey Burger" price="6.49" />
+      <Count order="Spicy Chicken Sandwich" price="7.19 " />
     </div>
   );
 }
