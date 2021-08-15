@@ -11,7 +11,7 @@ const Count = (props) => {
   const [count, setCount] = useState(0);
   const [button, setButton] = useState(true);
   const add = () => {
-    if (count == 0) {
+    if (count === 0) {
       setButton(false);
     }
     setCount(count + 1);
@@ -20,7 +20,7 @@ const Count = (props) => {
     if (count > 0) {
       setCount(count - 1);
     }
-    if (count == 1) {
+    if (count === 1) {
       setButton(true);
     }
   };
